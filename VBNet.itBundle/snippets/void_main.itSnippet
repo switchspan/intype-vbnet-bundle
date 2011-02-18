@@ -1,0 +1,10 @@
+﻿{
+	content: 'static void Main(string[] args)
+{
+	$0
+}
+'
+	title: 'void Main'
+	scope: 'source.csharp'
+	tab_trigger: 'svm'
+}

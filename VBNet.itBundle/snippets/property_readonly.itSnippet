@@ -1,0 +1,12 @@
+﻿{
+	content: 'private ${1:var_name} as ${2:data_type}
+	
+public readonly property ${3:prop_name}() as ${2:data_type}
+	get
+		return ${1:var_name}
+	end get
+end property'
+	title: 'read-only property'
+	scope: 'source.vbnet'
+	tab_trigger: 'propg'
+}

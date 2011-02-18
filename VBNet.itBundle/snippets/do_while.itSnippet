@@ -1,0 +1,9 @@
+﻿{
+	content: 'do while ${1:${2:i} <= ${3:10}}
+	$0
+	i += 1
+loop'
+	title: 'do while'
+	scope: 'source.vbnet'
+	tab_trigger: 'do'
+}

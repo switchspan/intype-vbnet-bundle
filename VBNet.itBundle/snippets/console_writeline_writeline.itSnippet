@@ -1,0 +1,7 @@
+﻿{
+	content: 'Console.WriteLine($1);
+$0'
+	title: 'Console.WriteLine()'
+	scope: 'source.csharp'
+	tab_trigger: 'cw'
+}

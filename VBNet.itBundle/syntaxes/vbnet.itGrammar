@@ -1,0 +1,179 @@
+﻿{
+	file_types: [		'vb','aspx','inc'
+	]
+	folding_start_marker: /\/\*\*|\{\s*$/
+	folding_stop_marker: /\*\*\/|^\s*\}/
+	title: 'VB.Net'
+	key_equivalent: 'Ctrl+Alt+Shift+C'
+	patterns: [		{
+			match: /\/\/\/.*$/
+			name: 'comment.documentation.vbnet'
+		}
+		{
+			match: /\'.*$/
+			name: 'comment.line.double-slash.vbnet'
+		}
+		{
+			begin: /\/\*/
+			end: /\*\//
+			name: 'comment.block.vbnet'
+		}
+		{
+			begin: /
+				^\s*
+				((?:\b(?:new|public|protected|internal|private|abstract|sealed|static)\b\s)*)
+				(class)\s+
+				([A-Za-z_]\w+)\b
+			/x
+			captures: {
+				1: {
+					name: 'storage.modifier.vbnet'
+				}
+				2: {
+					name: 'storage.type.vbnet'
+				}
+				3: {
+					name: 'entity.name.class.vbnet'
+				}
+			}
+			end: /{/
+			name: 'meta.definition.class.vbnet'
+			patterns: [				{
+					include: '#class-inheritance'
+				}
+			]
+		}
+		{
+			begin: /
+				^\s*		# start of line
+				((?:\b(?:new|public|protected|internal|private|static|virtual|sealed|override|abstract|extern)\b\s)*) 					# method-modifiers
+				\b((?:\w+\.)*[A-Za-z_]\w*)\b\s		# type
+				([A-Za-z_]\w*)\s*					# name
+				(?=\()
+			/x
+			captures: {
+				1: {
+					name: 'storage.modifier.vbnet'
+				}
+				2: {
+					name: 'storage.type.vbnet'
+				}
+				3: {
+					name: 'entity.name.function.vbnet'
+				}
+			}
+			end: /\)/
+			name: 'meta.definition.method.vbnet'
+			patterns: [				{
+					include: '#statement-remainder'
+				}
+			]
+		}
+		{
+			match: /\b(true|false|null|this|base)\b/
+			name: 'constant.language.vbnet'
+		}
+		{
+			match: /\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\b/
+			name: 'constant.numeric.vbnet'
+		}
+		{
+			match: /\b(if|else|elseif|then|exit|end|while|loop|for|foreach|do|next|return|continue|break|select|step|case|goto|to|throw|try|catch|finally|lock)\b/
+			name: 'keyword.control.vbnet'
+		}
+		{
+			match: /\b(new|is|checked|unchecked|typeof|sizeof|byref|byval|params|stackalloc|as)\b/
+			name: 'keyword.operator.vbnet'
+		}
+		{
+			match: /\b(event|delegate|explicit|implicit|in|set|get)\b/
+			name: 'keyword.other.vbnet'
+		}
+		{
+			match: /\b(internal|public|protected|private|static|const|new|sealed|abstract|override|extern|unsafe|readonly|volatile)\b/
+			name: 'storage.modifier.vbnet'
+		}
+		{
+			begin: /"/
+			end: /"/
+			name: 'string.quoted.double.vbnet'
+			patterns: [				{
+					match: /\\./
+					name: 'constant.character.escaped.untitled'
+				}
+			]
+		}
+		{
+			match: /'.*\'/
+			name: 'string.quoted.single.vbnet'
+		}
+		{
+			captures: {
+				1: {
+					name: 'keyword.other.imports'
+				}
+				2: {
+					name: 'entity.name.package.vbnet'
+				}
+			}
+			match: /^\s*(imports)\s+([^ ;]*)/
+			name: 'meta.keyword.imports.vbnet'
+		}
+		{
+			include: '#builtin-types'
+		}
+		{
+			captures: {
+				1: {
+					name: 'keyword.other.namespace'
+				}
+				2: {
+					name: 'entity.name.namespace.vbnet'
+				}
+			}
+			match: /^\s*(namespace)\s+([^ ]+)(?:\s*{)?$/
+			name: 'meta.keyword.namespace'
+		}
+	]
+	repository: {
+		builtin-types: {
+			patterns: [				{
+					match: /\b(boolean|byte|sbyte|char|decimal|double|date|single|integer|uinteger|long|ulong|object|short|ushort|string|const|class|structure|enum|property)\b/
+					name: 'storage.type.vbnet'
+				}
+			]
+		}
+		class-inheritance: {
+			patterns: [				{
+					begin: /:/
+					end: /(?={)/
+					patterns: [						{
+							include: '#class-inheritanceII'
+						}
+					]
+				}
+			]
+		}
+		class-inheritance_i_i: {
+			captures: {
+				1: {
+					name: 'storage.type.vbnet'
+				}
+			}
+			match: /\s*,?([A-Za-z_]\w*)\b/
+		}
+		statement-remainder: {
+			patterns: [				{
+					begin: /\(/
+					end: /(?=\))/
+					name: 'meta.definition.param-list.vbnet'
+					patterns: [						{
+							include: '#builtin-types'
+						}
+					]
+				}
+			]
+		}
+	}
+	scope_name: 'source.vbnet'
+}

@@ -1,0 +1,8 @@
+{
+	content: 'function ${1:FunctionName}(${2:Arguments}) as ${3:DataType} 
+	$0
+end function'
+	title: 'function'
+	scope: 'source.vbnet'
+	tab_trigger: 'func'
+}

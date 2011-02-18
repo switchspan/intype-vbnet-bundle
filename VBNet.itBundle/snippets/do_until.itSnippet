@@ -1,0 +1,9 @@
+{
+	content: 'do until ${1:x} = ${2:value}}
+	$0
+	${1:x} += 1
+loop'
+	title: 'do until'
+	scope: 'source.vbnet'
+	tab_trigger: 'dou'
+}

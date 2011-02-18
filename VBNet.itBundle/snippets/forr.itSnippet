@@ -1,0 +1,8 @@
+﻿{
+	content: 'for i = ${1:high_num} to ${2:low_num} step -1
+	$0
+next'
+	title: 'reverse for'
+	scope: 'source.vbnet'
+	tab_trigger: 'forr'
+}

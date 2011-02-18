@@ -1,0 +1,8 @@
+﻿{
+	content: 'while ($1) 
+	$0
+end while'
+	title: 'while'
+	scope: 'source.vbnet'
+	tab_trigger: 'while'
+}

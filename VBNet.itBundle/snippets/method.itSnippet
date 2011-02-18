@@ -1,0 +1,9 @@
+﻿{
+	content: '${1:public} ${2:void} ${3:MethodName} (${4:${5:int} ${6:value}})
+{
+	${0:// code...}
+}'
+	title: 'method ..'
+	scope: 'source.csharp'
+	tab_trigger: 'method'
+}

@@ -1,0 +1,9 @@
+﻿{
+	content: 'select case ${1:condition}
+	case $0
+	end select
+'
+	title: 'case'
+	scope: 'source.vbnet'
+	tab_trigger: 'case'
+}

@@ -1,0 +1,10 @@
+﻿{
+	content: '${1:EventHandler} ${3:temp} = ${2:MyEvent};
+if (${3:temp} != null)
+{
+${3:temp}($0);
+}'
+	title: 'safely invoke an event'
+	scope: 'source.csharp'
+	tab_trigger: 'invoke'
+}

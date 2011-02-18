@@ -1,0 +1,8 @@
+﻿{
+	content: 'enum ${1:MyEnum}
+	$0	            
+end enum'
+	title: 'enum'
+	scope: 'source.vbnet'
+	tab_trigger: 'enum'
+}

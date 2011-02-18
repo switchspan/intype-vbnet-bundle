@@ -1,0 +1,8 @@
+﻿{
+	content: 'elseif ${1:condition} then
+	$0
+'
+	title: 'else if (elseif)'
+	scope: 'source.vbnet'
+	tab_trigger: 'elseif'
+}

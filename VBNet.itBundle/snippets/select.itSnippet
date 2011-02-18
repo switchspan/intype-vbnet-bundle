@@ -1,0 +1,13 @@
+{
+	content: 'select case ${1:variable} 
+	case ${2:value}
+		${3:'' code...}
+	$0
+
+	case else:
+		${4:'' code...}
+end select'
+	title: 'select'
+	scope: 'source.vbnet'
+	tab_trigger: 'select'
+}

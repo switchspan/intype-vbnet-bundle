@@ -1,0 +1,8 @@
+﻿{
+	content: '${1:public} class ${2:MyClass}
+	$0
+end class'
+	title: 'class'
+	scope: 'source.vbnet'
+	tab_trigger: 'class'
+}

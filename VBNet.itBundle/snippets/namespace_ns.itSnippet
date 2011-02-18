@@ -1,0 +1,9 @@
+﻿{
+	content: 'namespace $1 
+	$0
+end namespace
+'
+	title: 'namespace'
+	scope: 'source.vbnet'
+	tab_trigger: 'ns'
+}

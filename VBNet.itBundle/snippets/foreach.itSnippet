@@ -1,0 +1,8 @@
+﻿{
+	content: 'for each ${1:object} as ${2:var_type} in ${3:collection_to_loop}
+	$0
+next'
+	title: 'foreach'
+	scope: 'source.vbnet'
+	tab_trigger: 'foreach'
+}

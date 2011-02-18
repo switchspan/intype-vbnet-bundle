@@ -1,0 +1,7 @@
+{
+	content: 'public property ${1:name} as ${2:data_type} = ${3:initial_value}
+'
+	title: 'property'
+	scope: 'source.vbnet'
+	tab_trigger: 'propa'
+}

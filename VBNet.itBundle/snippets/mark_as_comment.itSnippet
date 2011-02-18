@@ -1,0 +1,6 @@
+﻿{
+	title: ''' Mark as comment'
+	key_equivalent: 'Ctrl+/'
+ 	scope: 'source.vbnet'
+	content: '${SELECTED_TEXT/^.+$/\'' $0/g}'
+}

@@ -1,0 +1,8 @@
+﻿{
+	content: 'else 
+	$0
+'
+	title: 'else'
+	scope: 'source.vbnet'
+	tab_trigger: 'else'
+}

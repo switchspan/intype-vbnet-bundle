@@ -1,0 +1,9 @@
+﻿{
+	content: 'for i = ${1:start} to ${2:end} 
+	if i < ${2:end} then continue for
+	$0
+next'
+	title: 'for'
+	scope: 'source.vbnet'
+	tab_trigger: 'for'
+}

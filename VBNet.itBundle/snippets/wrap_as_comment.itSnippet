@@ -1,0 +1,6 @@
+﻿{
+	title: '/* Wrap as comment */'
+	key_equivalent: 'Ctrl+/'
+	scope: 'source.vbnet'
+	content: '/* $SELECTED_TEXT */'
+}

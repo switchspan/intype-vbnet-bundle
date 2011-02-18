@@ -1,0 +1,8 @@
+﻿{
+	content: 'if ${1:condition} then
+	$0
+end if'
+	title: 'if'
+	scope: 'source.vbnet'
+	tab_trigger: 'if'
+}

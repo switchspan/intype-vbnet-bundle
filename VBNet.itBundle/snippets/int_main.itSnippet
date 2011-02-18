@@ -1,0 +1,11 @@
+﻿{
+	content: 'static int Main(string[] args)
+{
+	$0
+	return 0;
+}
+'
+	title: 'int Main'
+	scope: 'source.csharp'
+	tab_trigger: 'sim'
+}
