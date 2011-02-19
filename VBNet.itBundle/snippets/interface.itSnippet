@@ -1,9 +1,8 @@
 ﻿{
 	content: 'interface I${1:Interface}
-{
 	$0            
-};'
+end interface'
 	title: 'interface'
-	scope: 'source.csharp'
+	scope: 'source.vbnet'
 	tab_trigger: 'interface'
 }

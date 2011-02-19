@@ -1,9 +1,11 @@
 ﻿{
-	content: '${1:public} ${2:void} ${3:MethodName} (${4:${5:int} ${6:value}})
-{
-	${0:// code...}
-}'
+	content: '${1:public} ${2:MethodName}(${3:${4:int} ${5:value}}) as ${6:data_type}
+	dim ${7:return_var} as ${6:data_type}
+	${0:'' code...}
+	
+	return ${7:return_var}
+end function'
 	title: 'method ..'
-	scope: 'source.csharp'
+	scope: 'source.vbnet'
 	tab_trigger: 'method'
 }

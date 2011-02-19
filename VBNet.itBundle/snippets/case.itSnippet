@@ -1,7 +1,7 @@
 ﻿{
 	content: 'select case ${1:condition}
 	case $0
-	end select
+end select
 '
 	title: 'case'
 	scope: 'source.vbnet'

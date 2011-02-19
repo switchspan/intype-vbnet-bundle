@@ -1,6 +1,6 @@
 ﻿{
-	content: 'global::System.Windows.Forms.MessageBox.Show(${1:"${2:Test}"});'
+	content: 'global::System.Windows.Forms.MessageBox.Show(${1:"${2:Test}"})'
 	title: 'message box'
-	scope: 'source.csharp'
+	scope: 'source.vbnet'
 	tab_trigger: 'mbox'
 }

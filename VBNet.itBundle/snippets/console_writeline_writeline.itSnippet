@@ -1,7 +1,7 @@
 ﻿{
-	content: 'Console.WriteLine($1);
+	content: 'Console.WriteLine($1)
 $0'
 	title: 'Console.WriteLine()'
-	scope: 'source.csharp'
+	scope: 'source.vbnet'
 	tab_trigger: 'cw'
 }

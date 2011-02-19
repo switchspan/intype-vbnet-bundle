@@ -1,11 +1,11 @@
 ﻿{
-	content: 'static int Main(string[] args)
-{
+	content: 'function main(byval cmdArgs() as string) as integer
+	dim returnValue as integer = 0
 	$0
-	return 0;
-}
+	return returnValue
+end function
 '
 	title: 'int Main'
-	scope: 'source.csharp'
+	scope: 'source.vbnet'
 	tab_trigger: 'sim'
 }
