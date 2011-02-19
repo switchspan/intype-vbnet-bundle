@@ -1,10 +1,12 @@
 ﻿{
-	content: '${1:public} ${2:object} this[${3:int} index]
-{
-	get { ${4:/* return the specified index here */} }
-    set { ${5:/* set the specified index to value here */} }
-}'
+	content: 'private ${1:var_name} as ${2:data_type}()
+	
+default public readonly property item(byval nIndex as integer) as ${2:data_type}
+	get
+		return ${1:var_name}(nIndex)
+	end get
+end property'
 	title: 'indexer'
-	scope: 'source.csharp'
+	scope: 'source.vbnet'
 	tab_trigger: 'indexer'
 }
