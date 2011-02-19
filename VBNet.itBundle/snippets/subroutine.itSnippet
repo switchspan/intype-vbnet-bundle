@@ -1,0 +1,8 @@
+{
+	content: 'sub ${1:SubName}(${2:Arguments})
+	$0
+end sub'
+	title: 'subroutine'
+	scope: 'source.vbnet'
+	tab_trigger: 'sub'
+}
